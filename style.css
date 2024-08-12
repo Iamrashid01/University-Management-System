@@ -1,0 +1,185 @@
+body {
+  margin: 0;
+}
+
+.logo-img{
+	width: auto;
+	height: auto;
+	border-radius: 50%;
+	margin-top: -6px;
+
+	margin-right: auto;
+	margin-left: 300px; 
+}
+
+#student{
+    width: 300px;
+    /*margin: 4% auto;*/
+    
+    margin-bottom: 200px;
+    margin-left: 50px;
+    
+}
+
+#background {
+    width: 100%; 
+    height: 100%; 
+    position: fixed; 
+    left: 0px; 
+    top: 0px; 
+    z-index: -1;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    -webkit-filter: brightness(200%);
+    filter: brightness(200%);
+    -webkit-filter: contrast(10%);
+    filter: contrast(10%);
+}
+
+.stretch {
+    width:100%;
+    height:100%;
+}
+
+.h_button:hover {
+opacity: 0.5;
+
+}
+
+.img-circle
+{
+    border-radius: 30%;
+}
+
+.waves {
+  position:relative;
+  width: 100%;
+  height:40vh;
+  /Fix for safari gap/
+  min-height:100px;
+  max-height:150px;
+}
+
+/Shrinking for mobile/
+@media (max-width: 768px) {
+  .waves {
+    height:50px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+  }
+}
+
+.srvc_icon{
+    width: 29px;
+    position: absolute;
+}
+
+.openBookIcon{
+    top: 20%;
+    right: 0;
+}
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+
+.topnav {
+  /*background-color: ;*/
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+a:visited {
+    color: white;
+}
+
+.button {
+ 
+ /*Step 2: Basic Button Styles*/
+ display: block;
+ height: 25px;
+ width: 125px;
+ background: #34696f;
+ border: 1px solid rgba(33, 68, 72, 0.59);
+ 
+ /*Step 3: Text Styles*/
+ color: rgba(255,240,245);
+ text-align: center;
+ font: bold width:auto height:auto "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+ 
+ /*Step 4: Fancy CSS3 Styles*/
+ background: -webkit-linear-gradient(top, #34696f, #2f5f63);
+ background: -moz-linear-gradient(top, #34696f, #2f5f63);
+ background: -o-linear-gradient(top, #34696f, #2f5f63);
+ background: -ms-linear-gradient(top, #34696f, #2f5f63);
+ background: linear-gradient(top, #34696f, #2f5f63);
+ 
+ -webkit-border-radius: 5px;
+ -khtml-border-radius: 5px;
+ -moz-border-radius: 5px;
+ border-radius: 5px;
+ 
+ -webkit-box-shadow: 0 8px 0 #1b383b;
+ -moz-box-shadow: 0 8px 0 #1b383b;
+ box-shadow: 0 8px 0 #1b383b;
+ 
+ text-shadow: 0 2px 2px rgba(255, 255, 255, 0.2);
+ 
+}
+
+/*Step 3: Link Styles*/
+a.button2 {
+ text-decoration: none;
+}
+ 
+/*Step 5: Hover Styles*/
+a.button:hover {
+ background: #3d7a80;
+ background: -webkit-linear-gradient(top, #3d7a80, #2f5f63);
+ background: -moz-linear-gradient(top, #3d7a80, #2f5f63);
+ background: -o-linear-gradient(top, #3d7a80, #2f5f63);
+ background: -ms-linear-gradient(top, #3d7a80, #2f5f63);
+ background: linear-gradient(top, #3d7a80, #2f5f63);
+}
+
+h2{
+	font-family: 'Cabin', sans-serif;
+}
